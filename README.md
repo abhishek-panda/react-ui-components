@@ -1,3 +1,3 @@
-# react-storybook-skeleton
+# react-ui-components
 
-A basic UI components storybook sleleton with React + Typescript
+A collection of reusable React UI components library.  

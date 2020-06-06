@@ -4,7 +4,9 @@
   "description": "reac",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "build": "build-storybook -c .storybook -o public",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
   "homepage": "https://github.com/abhishek-panda/react-ui-components#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.18",
