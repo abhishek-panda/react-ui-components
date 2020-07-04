@@ -1,16 +1,18 @@
 {
   "name": "react-ui-components",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "reac",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook",
     "build": "build-storybook -c .storybook -o public",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "commit": "git-cz",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhishek-panda/react-ui-components.git"
+    "url": "https://github.com/abhishek-panda/react-ui-components.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,11 +21,13 @@
   },
   "homepage": "https://github.com/abhishek-panda/react-ui-components#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "express": "^4.17.1"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
@@ -31,9 +35,17 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
     "react-docgen-typescript-loader": "^3.7.2",
+    "semantic-release": "^17.1.0",
     "ts-loader": "^7.0.4",
     "typescript": "^3.9.2",
     "webpack": "^4.43.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
