@@ -63,7 +63,7 @@
     }
   },
   "lint-staged": {
-    "components/**/*.{js,tsx}": [
+    "components/**/*.{js,ts,tsx}": [
       "eslint --fix"
     ]
   }
