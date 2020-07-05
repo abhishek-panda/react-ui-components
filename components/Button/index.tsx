@@ -1,21 +1,20 @@
 import * as React from 'react';
-import bind from "../utils/bind";
+import bind from '../utils/bind';
 
 interface Props {
     children : React.ReactChild,
-    msg ?: String
+    msg ?: string
 }
 
 interface State {
-    count : Number 
+    count : number
 }
 
-export class ButtonComponent extends React.Component<Props, State>{
-    
-    constructor(props: Props){
+export class ButtonComponent extends React.Component<Props, State> {
+    constructor(props: Props) {
         super(props);
         this.state = {
-            count: 0
+            count: 0,
         };
     }
 
@@ -28,5 +27,6 @@ export class ButtonComponent extends React.Component<Props, State>{
         return <button onClick={this.clickHandler}>{this.props.children}</button>
     }
 }
+
 
 export default ButtonComponent;
