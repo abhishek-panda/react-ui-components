@@ -59,5 +59,11 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "components/**/*.{js,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
