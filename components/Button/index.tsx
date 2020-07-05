@@ -6,7 +6,6 @@ interface Props {
     msg ?: string
 }
 
-
 interface State {
     count : number
 }
