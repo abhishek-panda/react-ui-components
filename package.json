@@ -44,6 +44,8 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "react-docgen-typescript-loader": "^3.7.2",
     "semantic-release": "^17.1.0",
     "ts-loader": "^7.0.4",
@@ -62,8 +64,7 @@
   },
   "lint-staged": {
     "components/**/*.{js,tsx}": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
