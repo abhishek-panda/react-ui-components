@@ -7,8 +7,7 @@
     "storybook": "start-storybook",
     "build": "build-storybook -c .storybook -o public",
     "start": "node server/index.js",
-    "release": "semantic-release",
-    "fixerrors": "eslint --fix .js,.jsx,.ts,.tsx ./"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -60,7 +59,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "prepare-commit-msg": "git-cz"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
   "lint-staged": {
