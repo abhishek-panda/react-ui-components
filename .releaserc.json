@@ -1,14 +1,14 @@
 {
-    "branches": [
-        "master", 
-        {
-            "name": "beta", 
-            "prerelease": true
-        }, 
-        {
-            "name": "alpha", 
-            "prerelease": true
-        }
-    ],
-    "ci": false
+  "branches": [
+    "master",
+    {
+      "name": "beta",
+      "prerelease": true
+    },
+    {
+      "name": "alpha",
+      "prerelease": true
+    }
+  ],
+  "ci": false
 }
