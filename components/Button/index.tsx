@@ -1,5 +1,5 @@
 import * as React from 'react';
-import bind from '../utils/bind';
+import bind from 'utils/bind';
 
 interface Props {
   children : React.ReactChild,

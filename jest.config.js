@@ -8,4 +8,9 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage',
   snapshotSerializers: ["enzyme-to-json/serializer"],
   setupFiles: ["<rootDir>/setupTests.ts"],
+  moduleNameMapper: {
+    "^utils/(.*)$" : [
+      "<rootDir>/components/utils/$1"
+    ]
+  }
 }

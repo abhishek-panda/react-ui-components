@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook",
-    "lint": "eslint --fix components/*",
+    "lint": "eslint --ignore-pattern components/**/*.test.tsx  --fix components/* ",
     "test": "jest",
-    "build": "build-storybook -c .storybook -o public",
+    "build-storybook": "build-storybook -c .storybook -o public",
     "start": "node server/index.js",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -76,7 +77,7 @@
   },
   "lint-staged": {
     "components/**/*.{ts,tsx}": [
-      "eslint --fix"
+      "eslint --fix --ignore-pattern components/**/*.test.tsx"
     ]
   }
 }

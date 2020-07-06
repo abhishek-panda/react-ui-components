@@ -1,16 +1,20 @@
 {
     "compilerOptions": {
       "strict": true,
-      "outDir": "build/lib",
-      "module": "esnext",
-      "target": "es2017",
+      "outDir": "lib",
+      "module": "commonjs",
+      "target": "es5",
+      "types": ["react", "jest"],
       "lib": ["es5", "es6", "es7", "es2017", "dom", "ESNext"],
       "sourceMap": true,
       "allowJs": false,
       "jsx": "react",
       "moduleResolution": "node",
       "rootDirs": ["components"],
-      "baseUrl": ".",
+      "baseUrl": "./",
+      "paths": {
+        "utils/*": ["components/utils/*"]
+      },
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
       "noImplicitThis": true,
@@ -18,7 +22,7 @@
       "strictNullChecks": true,
       "suppressImplicitAnyIndexErrors": true,
       "noUnusedLocals": true,
-      "declaration": true,
+      "declaration": false,
       "allowSyntheticDefaultImports": true,
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
@@ -28,5 +32,5 @@
       ],
     },
     "include": ["components/**/*"],
-    "exclude": ["node_modules", "build", "scripts"]
+    "exclude": ["node_modules", "lib", "scripts", "components/**/*.test.tsx"]
 }
